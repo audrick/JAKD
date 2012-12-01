@@ -1,18 +1,17 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: jakd_development  #name is name of app _development
-  pool: 5
+  database: name_development
   host: localhost
+  pool: 5
   username: postgres
-  password: 4114
-
+  password: mateo525
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: jakd_production  #name is name of app _development
-  pool: 5
+  database: name_development
   host: localhost
+  pool: 5
   username: postgres
-  password: 4114
+  password: mateo525

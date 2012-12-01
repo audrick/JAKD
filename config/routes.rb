@@ -1,4 +1,16 @@
 Jakd::Application.routes.draw do
+
+
+  get   "/signin" =>   "session#new"
+  post  "/signin" =>   "session#create"
+  get   "/signout" =>  "session#destroy"
+
+  match '/signup' => "players#new"
+  resources :players
+
+  root :to => 'home#index'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +60,7 @@ Jakd::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+
 
   # See how all your routes lay out with "rake routes"
 

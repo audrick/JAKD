@@ -4,6 +4,8 @@ gem 'rails', '3.2.9'
 gem 'jquery-rails'
 gem 'pg'
 gem 'deck-of-cards'
+gem 'authlogic'
+gem 'bcrypt-ruby'
 
 group :development, :test do
   gem 'pry-rails'
