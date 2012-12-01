@@ -1,0 +1,18 @@
+<%= form_for @player do |f| %>
+
+  <div class='field'>
+    <%= f.label :name, "Name:" %><br>
+    <%= f.text_field :name %><br>
+
+    <%= f.label :password, "Password:" %><br>
+    <%= f.password_field :password %><br>
+
+    <%= f.label :password_confirmation, "Password Confirmation:" %><br>
+    <%= f.password_field :password_confirmation %><br>
+  </div>
+
+  <div class='field'>
+    <%= f.submit "Create Profile" %>
+  </div>
+
+<% end %>
