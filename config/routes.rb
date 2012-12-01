@@ -1,7 +1,12 @@
 Jakd::Application.routes.draw do
 
 
-  resources :player
+  get   "/signin" =>   "session#new"
+  post  "/signin" =>   "session#create"
+  get   "/signout" =>  "session#destroy"
+
+  match '/signup' => "players#new"
+  resources :players
 
   root :to => 'home#index'
 
